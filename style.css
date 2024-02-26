@@ -849,6 +849,10 @@ footer .footer_section2 {
         padding: 30px
     }
 
+    .section1 {
+        height: 100%;
+    }
+
     .section1 h1 {
         font-size: 27px;
     }
@@ -873,7 +877,7 @@ footer .footer_section2 {
     }
 
     .slider {
-        height: 100vh;
+        height: 80vh;
     }
 
     .slider .list {
