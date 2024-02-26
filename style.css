@@ -935,6 +935,14 @@ footer .footer_section2 {
         padding: 50px 40px;
     }
 
+    .section1_sobreNos h1 {
+        font-size: 25px;
+    }
+
+    .section1_sobreNos p {
+        font-size: 33px;
+    }
+
     .section2_sobreNos {
         display: flex;
         flex-direction: column;
