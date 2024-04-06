@@ -989,8 +989,17 @@ footer .footer_section2 {
     bottom: -3px;
   }
 
+  .toggleMenu {
+    margin: 0 30px;
+  }
+
   header ul li a:hover {
     color: var(--cor-secundaria);
+  }
+
+  #google_translate_element {
+    width: auto;
+    margin: 0;
   }
 
   .toggleMenu {
