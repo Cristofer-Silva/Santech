@@ -1,0 +1,68 @@
+const textVersions = {
+  nav: {
+    navHome: {
+      pt: "Home",
+      en: "Home",
+      es: "Home",
+    },
+    navSobre: {
+      pt: "Sobre Nós",
+      en: "About Us",
+      es: "Sobre Nosotros",
+    },
+    navSolucoes: {
+      pt: "Soluções",
+      en: "Solutions",
+      es: "Soluciones",
+    },
+    navFale: {
+      pt: "Fale Conosco",
+      en: "Contact Us",
+      es: "Entre en Contacto",
+    },
+  },
+};
+
+const navHome = window.document.querySelector("#navHome");
+const navSobre = window.document.querySelector("#navSobre");
+const navSolucoes = window.document.querySelector("#navSolucoes");
+const navFale = window.document.querySelector("#navFale");
+
+let selectedLanguage = "pt";
+
+function handleChangeSelectedLanguageToPt() {
+  selectedLanguage = "pt";
+  updateTexts();
+}
+
+function handleChangeSelectedLanguageToEn() {
+  selectedLanguage = "en";
+  updateTexts();
+}
+
+function handleChangeSelectedLanguageToEs() {
+  selectedLanguage = "es";
+  updateTexts();
+}
+
+function updateTexts() {
+  if (selectedLanguage === "pt") {
+    navHome.innerHTML = textVersions.nav.navHome.pt;
+    navSobre.innerHTML = textVersions.nav.navSobre.pt;
+    navSolucoes.innerHTML = textVersions.nav.navSolucoes.pt;
+    navFale.innerHTML = textVersions.navFale.pt;
+  }
+  if (selectedLanguage === "en") {
+    navHome.innerHTML = textVersions.nav.navHome.en;
+    navSobre.innerHTML = textVersions.nav.navSobre.en;
+    navSolucoes.innerHTML = textVersions.nav.navSolucoes.en;
+    navFale.innerHTML = textVersions.navFale.en;
+  } else {
+    navHome.innerHTML = textVersions.nav.navHome.es;
+    navSobre.innerHTML = textVersions.nav.navSobre.es;
+    navSolucoes.innerHTML = textVersions.nav.navSolucoes.es;
+    navFale.innerHTML = textVersions.navFale.es;
+  }
+}
+
+updateTexts();
