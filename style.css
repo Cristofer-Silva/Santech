@@ -389,7 +389,7 @@ header .second_section ul li a:hover {
 }
 
 .accordion .contentBx.active .content {
-  height: 150px;
+  height: auto;
   padding: 20px 30px;
 }
 
@@ -513,7 +513,7 @@ header .second_section ul li a:hover {
 }
 
 .section5 div h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .section5 div p {
@@ -593,6 +593,11 @@ header .second_section ul li a:hover {
   margin: auto;
 }
 
+.section3_sobreNos p {
+  font-size: 20px;
+  text-align: justify;
+}
+
 .section3_sobreNos img {
   width: 50%;
   border-radius: 10px;
@@ -611,21 +616,59 @@ header .second_section ul li a:hover {
   margin: auto;
 }
 
+.section4_sobreNos p {
+  font-size: 20px;
+  text-align: justify;
+}
+
 .section4_sobreNos img {
   width: 50%;
   border-radius: 10px;
   box-shadow: 0 0 10px 0px var(--cor-primaria);
 }
 
-/* PÁGINA SOLUÇÕES */
+/* !PÁGINA SOLUÇÕES */
 
 .section1_solucoes {
-  padding: 50px 10% 100px 10%;
+  padding: 50px 10% 50px 10%;
 }
 
 .section1_solucoes h1 {
   text-align: center;
   padding-bottom: 60px;
+}
+
+.section1_solucoes h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+.section2_solucoes {
+  padding: 0 10% 50px 10%;
+}
+
+.section2_solucoes h1 {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.section2_solucoes h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+.section3_solucoes {
+  padding: 0 10% 100px 10%;
+}
+
+.section3_solucoes h1 {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.section3_solucoes h2 {
+  text-align: center;
+  font-size: 27px;
 }
 
 /* !PÁGINA FALE CONOSCO */
