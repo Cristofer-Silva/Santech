@@ -68,45 +68,66 @@
 
         <div class="contact form">
             <h3>Envie uma Mensagem</h3>
-            <form action="">
+            <form action="#">
                 <div class="formBox">
                     <div class="row50">
                         <div class="inputBox">
-                            <span>Primeiro Nome</span>
-                            <input type="text" placeholder="Gabriel">
+                            <span>Nome Completo</span>
+                            <input type="text" placeholder="Gabriel Silva Ribeiro" id="name" class="name" required>
                         </div>
                         <div class="inputBox">
-                            <span>Sobrenome</span>
-                            <input type="text" placeholder="Silva">
+                            <span>Email</span>
+                            <input type="email" placeholder="gabrielsilva@gmail.com" id="email" class="email" required>
                         </div>
                     </div>
 
                     <div class="row50">
                         <div class="inputBox">
-                            <span>Email</span>
-                            <input type="text" placeholder="gabrielsilva@gmail.com">
+                            <span>Telefone</span>
+                            <input type="number" placeholder="+55 (11) 99999-9999" id="phone" class="phone" required>
                         </div>
                         <div class="inputBox">
-                            <span>Telefone</span>
-                            <input type="text" placeholder="+55 (11) 99999-9999">
+                            <span>Finalidade do Serviço</span>
+                            <input type="text" placeholder="Auditoria" id="service" class="service" required>
                         </div>
                     </div>
 
                     <div class="row100">    
                         <div class="inputBox">
                             <span>Mensagem</span>
-                            <textarea placeholder="Digite sua mesagem aqui..."></textarea>
+                            <textarea placeholder="Escreva aqui sua mensagem" id="message" class="message"></textarea>
                         </div>
                     </div>
                     
                     <div class="row100">    
                         <div class="inputBox">
-                            <input type="submit" value="Enviar">
+                            <button type="button" onclick='sendwhatsapp()'>Enviar</button>
                         </div>
                     </div>
-
                 </div>
             </form>
+            <script>
+                function sendwhatsapp(){
+                 let phonenumber = "+5511992868804";
+          
+                 let name = document.querySelector(".name").value;
+                 let email = document.querySelector(".email").value;
+                 let phone = document.querySelector(".phone").value;
+                 let service = document.querySelector(".service").value;
+                 let message = document.querySelector(".message").value;
+          
+                 let url = "https://wa.me/" + phonenumber + "?text="
+                 +"Olá, essa é uma mensagem automática"+"%0a%0a"
+                 +"*Nome Completo:* "+name+"%0a"
+                 +"*Email:* "+email+"%0a"
+                 +"*Telefone:* "+phone+"%0a"
+                 +"*Finalidade do Serviço:* "+service+"%0a"
+                 +"*Mensagem:* "+message
+                 +"%0a";
+          
+                 window.open(url, '_blank').focus();
+               }
+              </script>
         </div>
 
         <div class="contact info">

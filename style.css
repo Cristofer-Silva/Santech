@@ -302,7 +302,7 @@ header .second_section ul li a:hover {
 }
 
 .section2 {
-  height: 100vh;
+  height: 100%;
   display: flex;
   padding: 100px 10% 0 10%;
   background-color: #fff;
@@ -399,13 +399,13 @@ header .second_section ul li a:hover {
 }
 
 .section4 {
-  height: 80vh;
+  height: 100%;
   background-color: var(--cor-primaria);
 }
 
 .slider {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -425,6 +425,7 @@ header .second_section ul li a:hover {
   width: 100vw;
   height: 100%;
   padding: 120px 180px;
+  top: 50%;
 }
 
 .slider .list .item .text {
@@ -777,13 +778,19 @@ textarea {
   margin-bottom: 10px;
 }
 
-.inputBox input[type="submit"] {
+.inputBox button[type="button"] {
   background: var(--cor-secundaria);
   border: none;
   font-size: 18px;
   max-width: 120px;
   font-weight: 500;
   padding: 12px 14px;
+}
+
+.inputBox button[type="button"]:hover {
+  background-color: #009cbe;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 svg {
@@ -1099,7 +1106,7 @@ footer .footer_section2 {
   }
 
   .slider {
-    height: 80vh;
+    height: 90vh;
   }
 
   .slider .list {
@@ -1108,7 +1115,7 @@ footer .footer_section2 {
 
   .slider .list .item {
     height: 100%;
-    padding: 40px 7% 40px 7%;
+    padding: 40px 6% 40px 6%;
   }
 
   .slider .list .item .text {
@@ -1123,7 +1130,7 @@ footer .footer_section2 {
 
   .slider .list .item .text h1 {
     color: var(--cor-secundaria);
-    font-size: 30px;
+    font-size: 23px;
   }
 
   .slider .list .item .text p {
