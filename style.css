@@ -286,16 +286,22 @@ header .second_section ul li a:hover {
   gap: 15px;
 }
 
+.section1_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .section1 h1 {
   align-items: center;
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 600;
   text-align: center;
 }
 
 .section1 p {
-  font-size: 23px;
+  font-size: 28px;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -1082,19 +1088,30 @@ footer .footer_section2 {
     padding: 100px 40px;
   }
 
+  .section1_text {
+    transform: none;
+  }
+
   .section1 h1 {
     font-size: 27px;
   }
 
   .section1 p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    vertical-align: middle;
   }
 
   .section2 {
     flex-direction: column;
     height: 100%;
+  }
+
+  .section2 h1 {
+    font-size: 30px;
+  }
+
+  .section2 p {
+    font-size: 18px;
   }
 
   .accordion .contentBx.active .content {
@@ -1147,6 +1164,14 @@ footer .footer_section2 {
     flex-direction: column-reverse;
   }
 
+  .section5 .div h1 {
+    font-size: 28px;
+  }
+
+  .section5 .div p {
+    font-size: 18px;
+  }
+
   .section5 img {
     width: 100%;
   }
@@ -1164,10 +1189,12 @@ footer .footer_section2 {
 
   .section1_sobreNos h1 {
     font-size: 25px;
+    font-weight: 600;
   }
 
   .section1_sobreNos p {
-    font-size: 33px;
+    font-size: 30px;,
+    font-weight: 500;
   }
 
   .section2_sobreNos {
@@ -1175,6 +1202,14 @@ footer .footer_section2 {
     flex-direction: column;
     height: 100%;
     padding: 50px 40px;
+  }
+
+  .section2_sobreNos h1 {
+    font-size: 30px;
+  }
+
+  .section2_sobreNos p {
+    font-size: 18px;
   }
 
   .section3_sobreNos {
@@ -1188,6 +1223,11 @@ footer .footer_section2 {
 
   .section3_sobreNos p {
     text-align: justify;
+    font-size: 18px;
+  }
+
+  .section3_sobreNos h1 {
+    font-size: 28px;
   }
 
   .section3_sobreNos img {
@@ -1205,6 +1245,11 @@ footer .footer_section2 {
 
   .section4_sobreNos p {
     text-align: justify;
+    font-size: 18px;
+  }
+
+  .section4_sobreNos h1 {
+    font-size: 28px;
   }
 
   .section4_sobreNos img {
@@ -1244,6 +1289,28 @@ footer .footer_section2 {
   footer .footer_section2 {
     padding: 30px 50px 50px 50px;
   }
+}
+
+/* !PÁGINA SOLUÇÕES */
+
+.section1_solucoes h1 {
+  font-size: 28px;
+}
+
+.section1_solucoes h2 {
+  font-size: 25px;
+}
+
+.accordion .contentBx .label {
+  font-size: 18px;
+}
+
+.section2_solucoes {
+  font-size: 25px;
+}
+
+.section3_solucoes {
+  font-size: 25px;
 }
 
 /* !PÁGINA FALE CONOSCO */
